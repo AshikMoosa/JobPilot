@@ -3,7 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" type="module" defer></script>
     <title>JobPilot</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header header--primary">
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__item"><a href="#">Home</a></li>
+          <li class="header__item"><a href="#">Find Job</a></li>
+          <li class="header__item"><a href="#">Find Employer</a></li>
+          <li class="header__item"><a href="#">Job Alert</a></li>
+          <li class="header__item"><a href="#">Customer Support</a></li>
+        </ul>
+        <div class="header__extras">
+          <span class="header__contact">+123456789</span>
+          <select class="header__language">
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+    <section class="subheading subheading--find-job">
+      <div class="subheading__left">
+        <h1 class="subheading__brand">JobPilot</h1>
+        <input
+          class="subheading__search"
+          type="text"
+          placeholder="Search jobs..."
+        />
+        <button class="subheading__filter-btn">Filter</button>
+      </div>
+      <div class="subheading__right">
+        <button class="subheading__notif-btn">🔔</button>
+        <button class="subheading__profile-btn">👤</button>
+      </div>
+    </section>
+
+    <main id="app" class="main">
+      <!-- Dynamic content here -->
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <p>&copy; 2025 JobPilot. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <section class="error">
+      <i class="fa-solid fa-circle-exclamation error__icon"></i>
+      <div class="error__right">
+        <p class="error__title">Something went wrong</p>
+        <p class="error__text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+    </section>
+  </body>
 </html>
