@@ -1,0 +1,79 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: initial;
+}
+
+button {
+  font: inherit;
+  border: initial;
+  outline: initial; /* create alternative for focus state */
+  background-color: initial;
+}
+
+input {
+  border: initial;
+  outline: initial; /* create alternative for focus state */
+  font: inherit;
+}
+
+/* BASE */
+.body {
+  background-color: #dee3e9;
+  color: rgb(22, 24, 28);
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  position: relative;
+
+  /* scrollbar-width: none; Firefox */
+}
+
+.body::-webkit-scrollbar {
+  /* Chrome, Safari, Edge, Opera, All browsers on iOS */
+  /* display: none; */
+}
+
+/* Base header block */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f8f9fa;
+}
+
+.header__menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header__item {
+  list-style: none;
+}
+
+/* Subheading for the job list page */
+.subheading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #e9ecef;
+}
+
+.subheading__search {
+  width: 60%;
+  padding: 0.5rem;
+}
