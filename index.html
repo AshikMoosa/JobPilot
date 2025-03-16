@@ -35,20 +35,22 @@
         </div>
       </nav>
     </header>
-    <section class="subheading subheading--find-job">
-      <div class="subheading__left">
-        <h1 class="subheading__brand">JobPilot</h1>
+    <section class="action-bar">
+      <div class="action-bar__left">
+        <h1 class="action-bar__brand">
+          <i class="fa-solid fa-briefcase"></i><span>JobPilot</span>
+        </h1>
         <input
-          class="subheading__search"
+          class="action-bar__search"
           type="text"
           placeholder="Job title, keyword, company, ..."
         />
       </div>
-      <div class="subheading__right">
-        <button class="subheading__notif-btn">
+      <div class="action-bar__right">
+        <button class="action-bar__icon action-bar__icon--notification">
           <i class="fa-regular fa-bell"></i>
         </button>
-        <button class="subheading__profile-btn">
+        <button class="action-bar__icon action-bar__icon--profile">
           <i class="fa-solid fa-user"></i>
         </button>
       </div>
@@ -56,6 +58,64 @@
 
     <main id="app" class="main">
       <!-- Dynamic content here -->
+      <section class="subheading subheading--joblist">
+        <div class="subheading__content">
+          <h3 class="subheading__title">Find Job</h3>
+          <nav class="subheading__breadcrumb">
+            <a href="/" class="subheading__breadcrumb-link">Home</a> /
+            <span class="subheading__breadcrumb-current">Find Job</span>
+          </nav>
+        </div>
+      </section>
+
+      <section class="search-box">
+        <div class="search-box__container">
+          <input
+            class="search-box__input"
+            type="text"
+            placeholder="Search jobs..."
+          />
+          <button class="search-box__button search-box__button--filter">
+            Filter
+          </button>
+          <button class="search-box__button search-box__button--submit">
+            Find Job
+          </button>
+        </div>
+      </section>
+
+      <section class="joblist">
+        <div class="joblist__grid">
+          <article class="job-card">
+            <h4 class="job-card__position">Frontend Developer</h4>
+            <p class="job-card__company">Company Name</p>
+            <p class="job-card__location">Remote</p>
+          </article>
+          <!-- Repeat the card structure for 15 job cards -->
+          <article class="job-card">
+            <h4 class="job-card__position">Backend Developer</h4>
+            <p class="job-card__company">Another Company</p>
+            <p class="job-card__location">New York</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="pagination">
+        <div class="pagination__controls">
+          <button class="pagination__button pagination__button--prev">
+            Prev
+          </button>
+          <div class="pagination__pages">
+            <span class="pagination__page pagination__page--active">1</span>
+            <span class="pagination__page">2</span>
+            <span class="pagination__page">3</span>
+            <!-- Continue for pages 4–10 -->
+          </div>
+          <button class="pagination__button pagination__button--next">
+            Next
+          </button>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__content">
